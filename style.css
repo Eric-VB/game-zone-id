@@ -1,0 +1,129 @@
+#fundoCabecalho{
+    background-color: black;
+
+}
+
+
+
+#title{
+    font-style: normal;
+    color: green;
+    font-size: 3em;
+}
+
+#logo{
+    width: 150px;
+    opacity: 50%;
+}
+
+#page{
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+#cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#corpo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+
+#subtitle{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#hr{
+    width: 600px;
+    color: gray;
+}
+
+.cabecalhoConteudo{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cabecalhoOption{
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 10px 20px;
+    
+}
+
+.cabecalhoOption:hover{
+    background-color: rgb(20, 20, 20);
+    
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.imagemContainer{
+    background-color: #000;
+    overflow: hidden;
+}
+
+.imagemContainer img{
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    filter: grayscale(0.5);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+
+.imagemContainer img:hover{
+    transform: scale(105%);
+    opacity: 100%;
+    cursor: pointer;
+    filter: grayscale(0);
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(img/fundo-02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: monospace;
+    font-size: 16pt;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+h2{
+    font-family: monospace;
+    font-size: 2em;
+    color: green;
+    margin: 0;
+}
