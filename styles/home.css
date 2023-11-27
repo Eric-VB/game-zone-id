@@ -1,0 +1,54 @@
+h1 {
+    font-family: monospace;
+    font-size: 2em;
+    text-align: center;
+    color: green;
+    margin: 0;
+    padding: 20px;
+}
+
+#subtitle {
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+hr {
+    width: 600px;
+    border-color: green;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.imagemContainer {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.imagemContainer img {
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    filter: grayscale(0.5);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+
+.imagemContainer img:hover {
+    transform: scale(105%);
+    opacity: 100%;
+    cursor: pointer;
+    filter: grayscale(0);
+}
