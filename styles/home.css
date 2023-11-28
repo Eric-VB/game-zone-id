@@ -13,6 +13,13 @@ h1 {
     padding-bottom: 15px;
 }
 
+.conteudoRodape{
+    color: white;
+    padding: 20px;
+    padding-left: 80px;
+    text-align: center;
+}
+
 hr {
     width: 600px;
     border-color: green;

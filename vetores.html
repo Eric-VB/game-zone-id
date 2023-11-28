@@ -6,7 +6,7 @@
     <title>Vetores</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link href="vetores-exemplo.php">
-    <link rel="stylesheet" href="vetores.css">
+    <link rel="stylesheet" href="./styles/vetores.css">
 </head>
 <body>
     <header>
@@ -22,18 +22,29 @@
         <h1>
             Vetores
         </h1>
-        <div style="background-color: white;">
-            <pre>
-            $listaDeCompras = [];
-    
-            // Adicionando itens a ultima posicao do array
-            $listaDeCompras[] = 'FIFA';
-            $listaDeCompras[] = 'Avatar';
-            $listaDeCompras[] = 'Little Nightmares III';
-    
-            // Mostrar a quantidade de itens da lista
-            echo count($listaDeCompras);
-            </pre>
+        <div id="coteudoVetores">
+            <div>
+                <span style="color: white">
+                    Segundo documentação do php, um array(Vetor) no PHP é na verdade um mapa ordenado. Um mapa é um tipo que relaciona valores a chaves. Este tipo é otimizado para várias usos diferentes: ele pode ser tratado como um array, uma lista (vetor), hashtable (que é uma implementação de mapa), dicionário, coleção, pilha, fila e provavelmente mais. Assim como existe a possibilidade dos valores do array serem outros arrays, árvores e arrays multidimensionais.
+
+                    A explicação dessas estruturas está além do escopo deste manual, mas pelo menos um exemplo é dado para cada uma delas. Para mais informações, busque a considerável literatura que existe sobre esse extenso tópico.
+                    <br>
+                    <br>
+                    
+                    Exemplo:
+                </span>
+                <pre style="background-color: white";>
+                $listaDeCompras = [];
+        
+                // Adicionando itens a ultima posicao do array
+                $listaDeCompras[] = 'FIFA';
+                $listaDeCompras[] = 'Avatar';
+                $listaDeCompras[] = 'Little Nightmares III';
+        
+                // Mostrar a quantidade de itens da lista
+                echo count($listaDeCompras);
+                </pre>
+            </div>
         </div>
     </main>
 </body>
