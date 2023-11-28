@@ -51,7 +51,7 @@ $sugestao = $_GET['sugestao'];
     <nav>
         <a href="/index.html" class="nav-item">Home</a>
         <a href="/cadastro.html" class="nav-item">Cadastro</a>
-        <a href="" class="nav-item">Página 3</a>
+        <a href="/vetores.html" class="nav-item">Vetores</a>
     </nav>
     <main>
         <h1>
