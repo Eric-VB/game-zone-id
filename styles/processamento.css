@@ -1,0 +1,27 @@
+h1 {
+    font-family: monospace;
+    font-size: 2em;
+    text-align: center;
+    color: green;
+    margin: 0;
+    padding: 20px;
+}
+
+hr {
+    width: 600px;
+    border-color: green;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+.revisao {
+    width: 75%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
