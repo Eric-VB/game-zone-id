@@ -1,7 +1,17 @@
 <?php
 
 $nome = $_GET['nome'];
+$Sobrenome = $_GET['sobrenome'];
+$email = $_GET['email'];
+$senha = $_GET['senha'];
+$confirmarSenha = $_GET['confirmarSenha'];
+$comoConheceu = $_GET['comoConheceu'];
+$nascimento = $_GET['nascimento'];
 $jogoEscolhido = $_GET['jogoEscolhido'];
+$termo = $_GET['termo'];
+$indicar = $_GET['indicar'];
+$experiencia = $_GET['experiencia'];
+$sugestao = $_GET['sugestao'];
 
 /**
  * Operação de vetores
@@ -39,8 +49,8 @@ $jogoEscolhido = $_GET['jogoEscolhido'];
         <img src="img/logo.png" alt="logo-2">
     </header>
     <nav>
-        <a href="" class="nav-item">Home</a>
-        <a href="" class="nav-item">Cadastro</a>
+        <a href="/index.html" class="nav-item">Home</a>
+        <a href="/cadastro.html" class="nav-item">Cadastro</a>
         <a href="" class="nav-item">Página 3</a>
     </nav>
     <main>
@@ -56,11 +66,74 @@ $jogoEscolhido = $_GET['jogoEscolhido'];
                     <span>
                         <?php echo strtoupper($nome); ?>
                     </span>
+                    <br>
+                    <strong>Sobrenome: </strong>
+                    <span>
+                        <?php echo strtoupper($Sobrenome); ?>
+                    </span>
+                    <br>
+                    <strong>E-mail: </strong>
+                    <span>
+                        <?php echo strtoupper($email); ?>
+                    </span>
+                    <br>
+                    <strong>Senha: </strong>
+                    <span>
+                        <?php echo $senha; ?>
+                    </span>
+                    <br>
+                    <strong>Confirmar Senha: </strong>
+                    <span>
+                        <?php echo $confirmarSenha; ?>
+                    </span>
+                    <br>
+                    <strong>Como conheceu: </strong>
+                    <span>
+                        <?php echo strtoupper($comoConheceu); ?>
+                    </span>
+                    <br>
+                    <strong>Quando nasceu: </strong>
+                    <span>
+                        <?php echo strtoupper($nascimento); ?>
+                    </span>
+                    <br>
+                    <strong>Jogo Escolhido: </strong>
+                    <span>
+                        <?php echo strtoupper($jogoEscolhido); ?>
+                    </span>
+                    <br>
+                    <strong>Probabilidade de indicação</strong>
+                    <span>
+                        <?php echo $indicar; ?>%
+                    </span>
+                    <br>
+                    <strong>Experiência:</strong>
+                    <span>
+                        <?php echo $experiencia; ?>
+                    </span>
+                    <br>
+                    <strong>Sugestão:</strong>
+                    <span>
+                        <?php 
+                        if(strtoupper($sugestao) == null){
+                            echo strtoupper('Sem sugestão');
+                        } else {
+                            echo strtoupper($sugestao);
+                        }
+                        ?>
+                    </span>
+                    <br>
+                    <span>
+                        <?php 
+                        if(strtoupper($termo) == 'ON'){
+                            echo 'Leu e aceitou';
+                        } else {
+                            echo 'Não aceitou o termo';
+                        }
+                        ?>
+                    </span>
                 </div>
             </div>
-
-
-
         </div>
     </main>
 </body>

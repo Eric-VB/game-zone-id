@@ -17,6 +17,14 @@ hr {
     justify-content: center;
 }
 
+.formularioTituloCampo{
+    font-size: 15px;
+}
+
+.genero-jogo{
+    font-size: 15px;
+}
+
 form {
     width: 75%;
     background-color: white;
@@ -24,8 +32,25 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-radius: 20px;
 }
 
 form input, form select {
     padding: 8px;
+}
+
+#botao{
+    background-color: rgb(0, 53, 0);
+    border-radius: 10px;
+    border-style: hidden;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    transition-duration: 1s;
+}
+
+#botao:hover{
+    background-color: green;
+    transform: scale(101%);
+    cursor: pointer;
 }

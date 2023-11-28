@@ -13,7 +13,7 @@
         <img src="img/logo.png" alt="logo-2">
     </header>
     <nav>
-        <a href="" class="nav-item">Home</a>
+        <a href="/index.html" class="nav-item">Home</a>
         <a href="" class="nav-item">Cadastro</a>
         <a href="" class="nav-item">Página 3</a>
     </nav>
@@ -25,32 +25,80 @@
         <div class="conteudo">
             
             <form action="processamento-cadastro.php" method="get">
-
-                <input type="text" placeholder="Nome" name="nome">
-                <input type="text" placeholder="Sobrenome">
-                <input type="email" placeholder="Seu endereço de e-mail">
+                <span class="formularioTituloCampo">
+                    Seu nome:
+                </span>
+                <input type="text" placeholder="Nome" name="nome" value="Eric">
+                <span class="formularioTituloCampo">
+                    Sobrenome:
+                </span>
+                <input type="text" placeholder="Sobrenome" name="sobrenome" value="Vinicius">
+                <span class="formularioTituloCampo">
+                    E-mail:
+                </span>
+                <input type="email" placeholder="Seu endereço de e-mail" name="email" value="eric@email.com">
+                <span class="formularioTituloCampo">
+                    Senha:
+                </span>
+                <input type="password" name="senha">
+                <span class="formularioTituloCampo">
+                    Confirme sua senha:
+                </span>
+                <input type="password" name="confirmarSenha">
                 <div class="como-conheceu">
-                    <input type="radio" name="comoConheceu" id="conheceu-via-facebook" value="Facebook">
+                    <span class="formularioTituloCampo">
+                        Como conheceu nosso site?
+                    </span>
+                    <br>
+                    <input type="radio" name="comoConheceu" id="conheceu-via-facebook" value="Facebook" checked="checked">
                     <label for="conheceu-via-facebook">
                         Facebook
                     </label>
+                    <br>
                     <input type="radio" name="comoConheceu" id="conheceu-via-instagram" value="Instagram">
                     <label for="conheceu-via-instagram">
                         Instagram
                     </label>
                 </div>
-                <input type="date" placeholder="Data de nascimento">
+                <span class="formularioTituloCampo">
+                    Qual sua data de nascimento?
+                </span>
+                <input type="date" placeholder="Data de nascimento" name="nascimento" value="2023-03-28">
+                <span class="formularioTituloCampo">
+                    Escolha um titulo para se cadastrar na pré venda:
+                </span>
                 <select name="jogoEscolhido">
-                    <option value="Avatar">
+                    <option value="Avatar" >
                         Avatar
                     </option>
-                    <option value="EA Sports FC 24">
+                    <option value="EA Sports FC 24" selected>
                         EA Sports FC 24
                     </option>
+                    <option value="Little Nightmares III">
+                        Little Nightmares III
+                    </option>
                 </select>
-
-                <input type="submit" value="Enviar">
-
+                <br>
+                <span class="formularioTituloCampo">
+                    Qual sua experiência com a compra (de 0 a 10)?
+                </span>
+                <input name="experiencia" type="number" min="0" max="10" value="10">
+                <br>
+                <span class="formularioTituloCampo">
+                    Qual a probabilidade de você indicar esse site a um amigo?
+                </span>
+                <input name="indicar" type="range" min="0" max="100" value="50">
+                <span class="formularioTituloCampo">
+                    Sugestão de melhoria:
+                </span>
+                <textarea name="sugestao" cols="30" rows="10" placeholder="Digite sua sugestão..."></textarea>
+                <div>
+                    <input type="checkbox" name="termo" id="termo-de-uso" checked="checked">
+                    <label for="termo-de-uso">
+                        Li e aceito os termos de uso
+                    </label>
+                </div>
+                <input type="submit" value="Enviar" id="botao">
             </form>
 
         </div>
